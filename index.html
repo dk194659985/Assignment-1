@@ -54,8 +54,8 @@
 
     <section id="our-menu">
       <h2>Our Menu</h2>
-      <table border="">
-        <caption style="text-align: center;"><b> TuteDude Complete Taco Menu</b></caption>
+      <table border="1">
+        <caption><b> TuteDude Complete Taco Menu</b></caption>
         <thead>
           <tr>
             <th rowspan="2">Category</th>
@@ -89,8 +89,8 @@
           <tr>
             <td>
               Crunchy (Veggie) <br>
-              <table border="">
-                <Caption style="text-align: center;"><em>Nutrition Info</em></Caption>
+              <table border="1">
+                <caption><em>Nutrition Info</em></caption>
                 <thead>
                   <tr>
                     <th>Nutrient</th>
@@ -119,22 +119,22 @@
             <td>$3.00</td>
           </tr>
           <tr>
-            <th rowspan="2"">Soft TuteDude</th>
-              <td>Soft (Beef)</td>
-              <td>2</td>
-              <td>$3.50</td>
-              <td>4</td>
-              <td>$6.50</td>
-            </tr>
-            <tr>
-              <td>Soft (Veggie)</td>
-              <td>2</td>
-              <td>$3.00</td>
-              <td>4</td>
-              <td>$5.50</td>
-            </tr>
-            <tr>
-              <th rowspan=" 2">Combos</th>
+            <th rowspan="2">Soft TuteDude</th>
+            <td>Soft (Beef)</td>
+            <td>2</td>
+            <td>$3.50</td>
+            <td>4</td>
+            <td>$6.50</td>
+          </tr>
+          <tr>
+            <td>Soft (Veggie)</td>
+            <td>2</td>
+            <td>$3.00</td>
+            <td>4</td>
+            <td>$5.50</td>
+          </tr>
+          <tr>
+            <th rowspan="2">Combos</th>
             <td>2 Crunchy + Drink</td>
             <td colspan="2">$4.50</td>
             <td colspan="2" rowspan="2">N/A</td>
@@ -142,8 +142,8 @@
           <tr>
             <td>
               2 Soft + Drink <br>
-              <table border="">
-                <caption style="text-align: center;"><em>Combo Meals Nutrition Facts</em></caption>
+              <table border="1">
+                <caption><em>Combo Meals Nutrition Facts</em></caption>
                 <thead>
                   <tr>
                     <th>Item</th>
@@ -209,23 +209,17 @@
     <section id="extras">
       <h2>Media Fun</h2>
 
-      <figure style="margin:0;">
-        <figcaption>
-          <h3>Listen to Taco Music</h3>
-        </figcaption>
-        <audio controls style="width: 280px;">
-          <source src="music.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
+      <h3>Listen to Taco Music</h3>
+      <audio controls>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
 
-        <figcaption>
-          <h3>Watch Taco Video</h3>
-        </figcaption>
-        <video controls style="height: 220px;">
-          <source src="video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </figure>
+      <h3>Watch Taco Video</h3>
+      <video controls height="220">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </section>
     <hr>
   </main>
@@ -234,21 +228,23 @@
   <!-- Form starts here -->
   <form id="feedback-form">
     <h2>Give Us Your Feedback</h2>
+
     <fieldset>
       <legend>Your Info</legend>
 
-      <label>Name:</label>
-      <input type="text" name="name"><br><br>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" pattern=".+@gmail\.com"><br><br>
+      <input type="email" id="email" name="email"><br><br>
 
-      <label>Favorite Taco</label>
-      <select name="category">
+      <label for="category">Favorite Taco</label>
+      <select id="category" name="category">
         <option>Crunchy</option>
         <option>Soft</option>
       </select>
     </fieldset>
+
     <fieldset>
       <legend>Your Message</legend>
       <label for="message">Message:</label><br>
